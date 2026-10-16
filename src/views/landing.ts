@@ -31,7 +31,7 @@ export function renderLanding(main: HTMLElement): void {
           <div class="compare-card">
             <h3>The new way — in on one card</h3>
             <div class="ticket">
-              <div class="ticket-row"><span class="k ticket-ref">SAC-7F2K</span><span class="v status-chip status-new">New</span></div>
+              <div class="ticket-row"><span class="k ticket-ref">FMZ-7F2K</span><span class="v status-chip status-new">New</span></div>
               <div class="ticket-row"><span class="k">Service</span><span class="v">Brakes — grinding at low speed</span></div>
               <div class="ticket-row"><span class="k">Vehicle</span><span class="v">Ford Fiesta, LD19 KPX</span></div>
               <div class="ticket-row"><span class="k">Wants</span><span class="v">Thu morning, 8–11am</span></div>

@@ -1,6 +1,6 @@
 import type { Job } from './types';
 
-const STORAGE_KEY = 'street-auto-care:jobs';
+const STORAGE_KEY = 'fmz:jobs';
 
 function todayPlus(days: number): string {
   const d = new Date();
@@ -11,7 +11,7 @@ function todayPlus(days: number): string {
 function seedJobs(): Job[] {
   return [
     {
-      ref: 'SAC-7F2K',
+      ref: 'FMZ-7F2K',
       createdAt: new Date(Date.now() - 1000 * 60 * 60 * 20).toISOString(),
       status: 'new',
       serviceId: 'brakes',
@@ -26,7 +26,7 @@ function seedJobs(): Job[] {
       notes: '',
     },
     {
-      ref: 'SAC-3M8Q',
+      ref: 'FMZ-3M8Q',
       createdAt: new Date(Date.now() - 1000 * 60 * 60 * 44).toISOString(),
       status: 'confirmed',
       serviceId: 'general-service',
@@ -41,7 +41,7 @@ function seedJobs(): Job[] {
       notes: 'Parking is tight on her road, call when 5 mins away.',
     },
     {
-      ref: 'SAC-9D4L',
+      ref: 'FMZ-9D4L',
       createdAt: new Date(Date.now() - 1000 * 60 * 60 * 70).toISOString(),
       status: 'done',
       serviceId: 'tyres',
@@ -56,7 +56,7 @@ function seedJobs(): Job[] {
       notes: '',
     },
     {
-      ref: 'SAC-1X6B',
+      ref: 'FMZ-1X6B',
       createdAt: new Date(Date.now() - 1000 * 60 * 30).toISOString(),
       status: 'new',
       serviceId: 'diagnostics',
@@ -110,5 +110,5 @@ export function makeRef(): string {
   const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
   let s = '';
   for (let i = 0; i < 4; i++) s += chars[Math.floor(Math.random() * chars.length)];
-  return `SAC-${s}`;
+  return `FMZ-${s}`;
 }
